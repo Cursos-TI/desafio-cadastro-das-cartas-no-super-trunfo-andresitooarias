@@ -47,9 +47,6 @@ int main()
     scanf("%d", &numeroPontosTuristicos);
     printf("O número de pontos turísticos da sua cidade é: %d\n\n", numeroPontosTuristicos);
 
-
-    //Mostrar na tela os dados da primeira carta do jogador.
-
     printf("Muito bem! Você acabou de inserir os dados da sua primeira carta, eles estarão sendo mostrados abaixo:\n\n");
 
     printf("Estado: %c\n", estado);
@@ -59,6 +56,8 @@ int main()
     printf("Área: %f\n", area);
     printf("PIB: %f\n", pib);
     printf("Número de pontos turísticos: %d\n", numeroPontosTuristicos);
+
+
 
     return 0;
 }

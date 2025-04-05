@@ -21,7 +21,7 @@ int main()
 
     // Manual do jogo.
     printf("***Seja bem vindo ao Super Trunfo!***\n\n");
-    printf("Para que comecemos nosso jogo será necessário que você insira os dados abaixo que serão utilizados para suas duas cartas.");
+    printf("Para iniciarmos nosso jogo será necessário que você insira os dados abaixo que serão utilizados para suas duas cartas.\n\n");
 
     // Leitura dos dados da primeira carta.
     printf("Iremos começar com as informações da sua primeira carta, ok? Vamos nessa!\n");
@@ -46,7 +46,7 @@ int main()
     printf("Insira a quantidade de pontos turísticos que a sua Cidade possui: ");
     scanf("%d", &numeroPontosTuristicos1);
 
-    printf("\n");
+    printf("\n\n");
 
     // Exibição de dados da primeira carta.
     printf("Muito bem! Você acabou de inserir os dados da sua primeira carta, eles serão mostrados abaixo:");

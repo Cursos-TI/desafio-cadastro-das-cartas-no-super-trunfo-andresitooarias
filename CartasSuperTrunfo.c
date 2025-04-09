@@ -19,6 +19,9 @@ int main()
     float area2;
     float pib2;
 
+    // Densidade populacional e PIB/CAPITA
+    float densidadePopulacional1, pibPercapita1, densidadePopulacional2, pibPercapita2;
+
     // Manual do jogo.
     printf("***Seja bem vindo ao Super Trunfo!***\n\n");
     printf("Para iniciarmos nosso jogo será necessário que você insira os dados abaixo que serão utilizados para suas duas cartas.\n\n");
@@ -48,6 +51,11 @@ int main()
 
     printf("\n\n");
 
+    // Calculo de PIB/Capita e densidade populacional.
+    pibPercapita1 = (float)pib1 / populacao1;
+
+    densidadePopulacional1 = (float)populacao1 / area1;
+
     // Exibição de dados da primeira carta.
     printf("Muito bem! Você acabou de inserir os dados da sua primeira carta, eles serão mostrados abaixo:");
 
@@ -58,6 +66,8 @@ int main()
     printf("A área da sua cidade é: %.2f km² \n", area1);
     printf("O PIB digitado foi: %.2f bilhões de reais\n", pib1);
     printf("O número de pontos turísticos da sua cidade é: %d\n", numeroPontosTuristicos1);
+    printf("Densidade populacional: %.2f\n hab/km²", densidadePopulacional1);
+    printf("Pib per capita: %.2f\n reais", pibPercapita1);
 
     printf("\n");
 
@@ -84,6 +94,9 @@ int main()
     printf("Insira a quantidade de pontos turísticos que a sua Cidade possui: ");
     scanf("%d", &numeroPontosTuristicos2);
 
+    pibPercapita2 = (float)pib2 / populacao2;
+    densidadePopulacional2 = (float)populacao2 / area2;
+
     // Exibição de dados da segunda carta.
     printf("Muito bem! Você acabou de inserir os dados da sua segunda carta, eles serão mostrados abaixo:");
 
@@ -94,6 +107,8 @@ int main()
     printf("A área da sua cidade é: %.2f km²\n", area2);
     printf("O PIB digitado foi: %.2f bilhões de reais\n", pib2);
     printf("O número de pontos turísticos da sua cidade é: %d\n", numeroPontosTuristicos2);
+    printf("Densidade populacional: %.2f\n hab/km²", densidadePopulacional2);
+    printf("Pib per capita: %.2f\n reais", pibPercapita2);
 
     return 0;
 }
